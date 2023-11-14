@@ -14,6 +14,10 @@ table(2);
 console.log("Reverse")
 
 function reverse(num1){
+    if (num1 > 5){
+        console.error("......");
+        return;
+    }
     for (let i = 10; i >= 1; i--){
         if (i <= 3) {
             break;
@@ -22,4 +26,4 @@ function reverse(num1){
         console.log(`${num1} x ${i} = ${num1*i}`);
     }
 }
-reverse(5);
+reverse(6);
